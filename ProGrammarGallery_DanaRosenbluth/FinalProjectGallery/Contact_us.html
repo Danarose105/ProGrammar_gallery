@@ -1,0 +1,144 @@
+﻿<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title>Pro-Grammar צור קשר</title>
+    <meta name="description" content="עמוד צור קשר- דברו איתנו" />
+    <meta name="keywords" content="צור קשר, דברו איתנו, פנייה,אנגלית,דקדוק,כללים,תרגול,זמנים" />
+    <meta name="author" content="דנה רוזנבלוט" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <!-- CSS -->
+    <!--<link href="styles/reset.css" rel="stylesheet" />-->
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <link rel="icon" href="images/1x/Asset 9.png" />
+    <!-- Scripts -->
+    <script src="jScripts/jquery-3.6.0.min.js"></script>
+    <script src="jScripts/JavaScript.js" type="text/javascript"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Rubik:wght@300&display=swap');
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <a name="top"></a>
+            <nav aria-label="Global_Nav" id="top_nav">
+                <ul>
+                    <li>
+                        <a href="index.html" id="logoslot">
+                            <img src="images/1x/Asset 9.png" title="Pro-Grammar Home Page" alt="Pro Grammar Home Page link" class="logo" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#noLink" class="noLink">עבר</a>
+                        <ul>
+                            <li><a href="#noLink" class="noLink">Past Simple</a></li>
+                            <li><a href="#noLink" class="noLink">Past Progressive</a></li>
+                            <li><a href="#noLink" class="noLink">Past Perfect Simple</a></li>
+                            <li><a href="#noLink" class="noLink">Past Perfect Progressive</a></li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <a href="#noLink" class="noLink">הווה</a>
+                        <ul>
+                            <li><a href="Present Simple.html">Present Simple</a></li>
+                            <li><a href="#noLink" class="noLink">Present Progressive</a></li>
+                            <li><a href="#noLink" class="noLink">Present Perfect Simple</a></li>
+                            <li><a href="#noLink" class="noLink">Present Perfect Progressive</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#noLink" class="noLink">עתיד</a>
+                        <ul>
+                            <li><a href="#noLink" class="noLink">Future Simple</a></li>
+                            <li><a href="#noLink" class="noLink">Future Progressive</a></li>
+                            <li><a href="#noLink" class="noLink">Future Perfect Simple</a></li>
+                            <li><a href="#noLink" class="noLink">Future Perfect Progressive</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#noLink" class="noLink">זמנים מתקדמים</a>
+                        <ul>
+                            <li><a href="#noLink" class="noLink">Temporals</a></li>
+                            <li><a href="Conditionals.html">Conditionals</a></li>
+                            <li><a href="#noLink" class="noLink">Passive</a></li>
+                            <li><a href="#noLink" class="noLink">Modals and semi-modals</a></li>
+                            <li><a href="#noLink" class="noLink">Relative clauses</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#noLink" class="noLink">אודות</a>
+                        <ul>
+                            <li><a href="about.html">קצת עלינו</a></li>
+                            <li><a href="siteMap.html">מפת האתר</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Contact_us.html" class="navedge">צור קשר</a></li>
+                </ul>
+            </nav>
+            <nav aria-label="breadcrumbs" class="breadcrumbs">
+                <ol>
+                    <li><a href="index.html">עמוד הבית</a></li>
+                    <li><a href="Contact_us.html">צור קשר</a></li>
+                </ol>
+            </nav>
+        </header>
+        <main>
+            <form>
+                <input type="hidden" id="myEmail" name="formGoal" value="danarose105@gmail.com" />
+                <div id="contactInfo">
+                    <h1>דברו איתנו !</h1>
+                    <p>נתקעתם? משהו לא ברור? נשמח לשמוע מכם!</p>
+                    <p class="formQ">שם פרטי:</p>
+                    <label for="fname">
+                        <input type="text" id="fname" placeholder="הזן את שמך הפרטי" required />
+                    </label>
+                    <p class="formQ">שם משפחה:</p>
+                    <label for="lname">
+                        <input type="text" id="lname" placeholder="הזן את שם משפחתך" required />
+                    </label>
+                </div>
+                <div id="userQ">
+
+                    <fieldset id="engLevel">
+                        <legend>מהי רמת התוכן בה אתם מעוניינים?</legend>
+                        <input type="radio" name="engLevel" />בית ספר יסודי<br />
+                        <input type="radio" name="engLevel" />חטיבת ביניים<br />
+                        <input type="radio" name="engLevel" />תיכון<br />
+                        <input type="radio" name="engLevel" />אחר<br />
+                    </fieldset>
+
+                    <p>איך אפשר לעזור?</p><br />
+                    <select id="contactReason">
+                        <option value="1" selected>יש לי שאלה</option>
+                        <option value="2">יש לי בקשה/המלצה</option>
+                        <option value="3">אחר</option>
+                    </select>
+                    <p class="formQ">נשמע מעניין! תרצו לפרט?</p><br />
+                    <textarea id="userFeedback" placeholder="הזן את תוכן הפנייה אלינו" rows="5" required></textarea>
+                </div>
+                <label for="sendForm">
+                    <input type="submit" id="sendForm" value="שלח" />
+                </label>
+                <div id="feedback"></div>
+            </form>
+
+
+            <img src="images/colleagues-working-together-project/6308.jpg" alt="" title="groupwork image" id="gw_img"/>
+            
+            <a href="#top" class="gotoTop">לראש העמוד</a>
+        </main>
+        <footer>
+            <nav aria-label="Footer_Nav">
+                <ul>
+                    <li><a href="index.html">לעמוד הבית</a></li>
+                    <li><a href="about.html">אודות</a></li>
+                    <li><a href="siteMap.html">מפת האתר</a></li>
+                    <li><a href="Contact_us.html">צור קשר</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>
